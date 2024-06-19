@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "User Page";
+}
+
+@{
+    var culture = System.Globalization.CultureInfo.CurrentCulture.ToString();
+}
+<style>
+    .container-fluid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<input type="button" onclick="test001()">
+@(Html.Kendo().Grid<TelerikAspNetCoreApp1.Models.Users>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+        columns.Bound(p => p.UserID).Width(100).Title("ID");
+        columns.Bound(p => p.UserName).Width(120).Title("Tên người dùng");
+        columns.Bound(p => p.Email).Width(120).Title("Email");
+        columns.Bound(p => p.Tel).Width(120).Title("Số điện thoại");
+        columns.Bound(p => p.Disabled).Width(120).Title("Disabled");
+        columns.Command(command => { 
+            command.Edit().HtmlAttributes(new {style = "background-color:blue; border: none;"}); 
+            command.Destroy().Template("<button class='k-button k-grid-delete'>Delete</button>");
+        }).Width(200).Title("Thực hiện");
+    })
+    .ToolBar(toolbar => toolbar.Create())
+    .Editable(editable =>
+        editable.Mode(GridEditMode.PopUp)
+    )
+    
+
+    .Pageable()
+    .Sortable()
+    .Scrollable()
+    .HtmlAttributes(new { style = "height:550px; width: 90%;" })
+    
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .PageSize(20)
+        .Events(events => events.Error("error_handler"))
+        .Model(model => model.Id(p => p.UserID))
+        .Read(read => read.Action("DocUser", "Grid"))
+        .Create(update => update.Action("CreateUser", "Grid"))
+        .Update(update => update.Action("UpdateUser", "Grid"))
+        .Destroy(update => update.Action("DeleteUser", "Grid"))
+    )
+)
+
+<script type="text/javascript">
+    function error_handler(e) {
+        if (e.errors) {
+            var message = "Errors:\n";
+            $.each(e.errors, function (key, value) {
+                if ('errors' in value) {
+                    $.each(value.errors, function () {
+                        message += this + "\n";
+                    });
+                }
+            });
+            alert(message);
+        }
+    }
+</script>
+
+<script>
+    
+    $(document).on("click", ".k-grid-delete", function () {
+        var grid = $("#grid").data("kendoGrid");
+        var dataItem = grid.dataItem($(this).closest("tr"));
+        // Prompt user to confirm by entering the UserID again
+        kendo.prompt("To confirm deletion, please enter the UserID (" + dataItem.UserID + "):").then(function (result) {
+            if (result === dataItem.UserID) {
+                // Perform the delete action
+                $.ajax({
+                    url: "@Url.Action("DeleteUser", "Grid")",
+                    type: "POST",
+                    data: { userId: dataItem.UserID },
+                    success: function (result) {
+                        // Refresh the grid
+                        grid.dataSource.read();
+                    },
+                    error: function (xhr, status, error) {
+                        alert("An error occurred while deleting the record.");
+                    }
+                });
+            } else {
+                // Inform user that deletion was canceled
+                alert("Deletion canceled. You entered a different UserID.");
+            }
+        });
+    });
+
+    $(document).on("click", ".k-grid-add", function () {
+        var grid = $("#grid").data("kendoGrid");
+        // Prompt user for new user details
+        kendo.prompt("Please enter new UserID:").then(function (newUserID) {
+            if (newUserID) {
+                // Perform the add action
+                $.ajax({
+                    url: "@Url.Action("CreateUser", "Grid")",
+                    type: "POST",
+                    data: { userId: newUserID },
+                    success: function (result) {
+                        // Refresh the grid
+                        grid.dataSource.read();
+                    },
+                    error: function (xhr, status, error) {
+                        alert("An error occurred while adding the new record.");
+                    }
+                });
+            } else {
+                // Inform user that add was canceled
+                alert("Add canceled. No UserID was entered.");
+            }
+        });
+    });
+
+</script>
+

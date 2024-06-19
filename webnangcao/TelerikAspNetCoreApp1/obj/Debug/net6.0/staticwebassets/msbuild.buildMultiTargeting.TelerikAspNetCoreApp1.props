@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TelerikAspNetCoreApp1.props" />
+</Project>

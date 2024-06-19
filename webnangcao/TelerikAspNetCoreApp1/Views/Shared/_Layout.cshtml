@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TelerikAspNetCoreApp1</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Userion">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    </environment>
+    @*Core Content Start*@
+
+    <link href="https://kendo.cdn.telerik.com/themes/7.0.2/bootstrap/bootstrap-nordic.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
+	<script src="https://cdn.kendostatic.com/2024.2.514/js/kendo.all.min.js"></script>
+	<script src="https://cdn.kendostatic.com/2024.2.514/js/kendo.aspnetmvc.min.js"></script>
+@*Core Content End*@
+        @{
+        var culture = System.Globalization.CultureInfo.CurrentCulture.ToString();
+        var path = Url.Content("~/lib/kendo-ui/js/messages/kendo.messages." + culture + ".min.js");
+    }
+
+    <script src="@path"></script>
+    <style>
+        .k-menu:not(.k-context-menu) {
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+
+<body class="k-content">
+    <nav class="navbar navbar-dark" style="background-color:deepskyblue">
+
+            @(Html.Kendo().Menu()
+                .Name("Menu")
+                .Items(items =>
+                {
+                    items.Add().Text("Test1").Action("Index", "Home", new { area = "" });
+                    items.Add().Text("Home").Action("Index", "Home", new { area = "" });
+                    items.Add().Text("About").Action("About", "Home", new { area = "" });
+                    items.Add().Text("Contact").Action("Contact", "Home", new { area = "" });
+                    items.Add().Text("User").Action("Index", "User", new { area = "" });
+                })
+                )
+
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="" type="submit"
+                    style="border-radius: 10px; border:none;width: 30%;">
+                Search
+            </button>
+        </form>
+    </nav>
+    
+
+    <main>
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="footer text-center d-flex align-items-center">
+        <div class="container-fluid">
+            <p class="text-muted">
+                Copyright © @DateTime.Now.Year Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <environment names="Development">
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    </environment>
+    <environment names="Staging,Userion">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+
+    <script>
+        $(document).ready(function () {
+            kendo.ui.icon($(".menu"), { icon: "menu", type: "svg" })
+        });
+    </script>
+</body>
+</html>

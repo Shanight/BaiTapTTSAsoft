@@ -1,0 +1,957 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\images\\200.png",
+      "PackagePath": "staticwebassets\\images\\200.png"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\js\\site.min.js",
+      "PackagePath": "staticwebassets\\js\\site.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery-validation\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery-validation\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery-validation\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery-validation\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-AE.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-AE.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-AE.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-AE.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-BH.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-BH.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-BH.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-BH.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-DJ.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-DJ.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-DJ.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-DJ.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-DZ.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-DZ.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-DZ.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-DZ.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-EG.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-EG.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-EG.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-EG.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-ER.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-ER.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-ER.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-ER.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-IL.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-IL.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-IL.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-IL.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-IQ.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-IQ.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-IQ.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-IQ.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-JO.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-JO.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-JO.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-JO.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-KM.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-KM.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-KM.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-KM.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-KW.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-KW.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-KW.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-KW.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-LB.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-LB.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-LB.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-LB.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-LY.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-LY.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-LY.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-LY.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-MA.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-MA.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-MA.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-MA.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-MR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-MR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-MR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-MR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-OM.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-OM.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-OM.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-OM.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-PS.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-PS.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-PS.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-PS.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-QA.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-QA.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-QA.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-QA.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SA.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SA.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SA.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SA.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SD.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SD.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SD.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SD.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SO.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SO.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SO.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SO.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SS.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SS.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SS.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SS.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SY.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SY.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SY.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-SY.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-TD.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-TD.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-TD.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-TD.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-TN.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-TN.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-TN.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-TN.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-YE.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-YE.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-YE.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ar-YE.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.bg-BG.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.bg-BG.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.bg-BG.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.bg-BG.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.cs-CZ.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.cs-CZ.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.cs-CZ.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.cs-CZ.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.da-DK.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.da-DK.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.da-DK.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.da-DK.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-AT.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-AT.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-AT.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-AT.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-CH.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-CH.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-CH.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-CH.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-DE.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-DE.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-DE.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-DE.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-LI.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-LI.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-LI.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.de-LI.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.el-GR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.el-GR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.el-GR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.el-GR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-AU.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-AU.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-AU.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-AU.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-CA.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-CA.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-CA.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-CA.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-GB.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-GB.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-GB.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-GB.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-US.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-US.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-US.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.en-US.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-AR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-AR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-AR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-AR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-BO.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-BO.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-BO.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-BO.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CL.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CL.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CL.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CL.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CO.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CO.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CO.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CO.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-CR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-DO.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-DO.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-DO.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-DO.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-EC.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-EC.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-EC.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-EC.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-ES.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-ES.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-ES.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-ES.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-GT.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-GT.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-GT.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-GT.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-HN.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-HN.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-HN.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-HN.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-MX.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-MX.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-MX.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-MX.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-NI.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-NI.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-NI.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-NI.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PA.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PA.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PA.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PA.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PE.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PE.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PE.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PE.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PY.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PY.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PY.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-PY.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-US.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-US.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-US.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-US.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-UY.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-UY.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-UY.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-UY.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-VE.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-VE.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-VE.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.es-VE.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fa-IR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fa-IR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fa-IR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fa-IR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fi-FI.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fi-FI.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fi-FI.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fi-FI.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-BE.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-BE.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-BE.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-BE.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CA.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CA.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CA.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CA.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CD.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CD.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CD.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CD.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CH.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CH.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CH.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CH.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CI.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CI.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CI.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CI.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CM.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CM.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CM.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-CM.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-FR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-FR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-FR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-FR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-HT.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-HT.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-HT.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-HT.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-LU.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-LU.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-LU.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-LU.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-MA.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-MA.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-MA.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-MA.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-MC.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-MC.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-MC.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-MC.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-ML.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-ML.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-ML.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-ML.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-SN.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-SN.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-SN.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.fr-SN.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.he-IL.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.he-IL.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.he-IL.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.he-IL.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.hr-HR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.hr-HR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.hr-HR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.hr-HR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.hu-HU.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.hu-HU.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.hu-HU.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.hu-HU.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.hy-AM.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.hy-AM.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.hy-AM.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.hy-AM.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.it-CH.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.it-CH.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.it-CH.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.it-CH.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.it-IT.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.it-IT.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.it-IT.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.it-IT.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ja-JP.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ja-JP.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ja-JP.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ja-JP.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.mk-MK.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.mk-MK.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.mk-MK.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.mk-MK.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.nb-NO.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.nb-NO.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.nb-NO.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.nb-NO.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.nl-BE.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.nl-BE.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.nl-BE.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.nl-BE.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.nl-NL.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.nl-NL.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.nl-NL.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.nl-NL.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.pl-PL.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.pl-PL.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.pl-PL.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.pl-PL.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.pt-BR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.pt-BR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.pt-BR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.pt-BR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.pt-PT.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.pt-PT.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.pt-PT.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.pt-PT.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ro-RO.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ro-RO.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ro-RO.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ro-RO.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ru-RU.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ru-RU.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.ru-RU.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.ru-RU.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.sk-SK.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.sk-SK.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.sk-SK.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.sk-SK.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.sq-AL.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.sq-AL.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.sq-AL.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.sq-AL.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.sr-Latn-RS.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.sr-Latn-RS.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.sr-Latn-RS.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.sr-Latn-RS.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.sv-SE.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.sv-SE.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.sv-SE.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.sv-SE.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.tr-TR.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.tr-TR.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.tr-TR.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.tr-TR.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.uk-UA.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.uk-UA.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.uk-UA.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.uk-UA.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.vi-VN.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.vi-VN.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.vi-VN.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.vi-VN.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-CN.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-CN.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-CN.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-CN.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-HK.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-HK.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-HK.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-HK.min.js.map"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-TW.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-TW.min.js"
+    },
+    {
+      "Id": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\wwwroot\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-TW.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\kendo-ui\\js\\messages\\kendo.messages.zh-TW.min.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TelerikAspNetCoreApp1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TelerikAspNetCoreApp1.props",
+      "PackagePath": "build\\TelerikAspNetCoreApp1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TelerikAspNetCoreApp1.props",
+      "PackagePath": "buildMultiTargeting\\TelerikAspNetCoreApp1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TelerikAspNetCoreApp1.props",
+      "PackagePath": "buildTransitive\\TelerikAspNetCoreApp1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
