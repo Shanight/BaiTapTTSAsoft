@@ -4541,17 +4541,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1.csproj",
+      "projectUniqueName": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1.csproj",
       "projectName": "TelerikAspNetCoreApp1",
-      "projectPath": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1.csproj",
+      "projectPath": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1.csproj",
       "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
-      "outputPath": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\obj\\",
+      "outputPath": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\NuGet.Config",
+        "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\NuGet.Config",
         "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

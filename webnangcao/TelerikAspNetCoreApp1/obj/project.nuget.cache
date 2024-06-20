@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i+ncO2jfwEdppVCk3wpPTIwNoFotR/yYjbziTVzry+WKUxbwK+FCI2y7vjhoixOEN/wJD2jKhEcokJys1uHdxA==",
+  "dgSpecHash": "ws8ZUsasGOoHCxBGaIIGkCYl3fqc2i3PFgD2gI2owQarC/z9zltQUoP4VgtWGiXsm72Au2fUo9ri2PRKmF+lKw==",
   "success": true,
-  "projectFilePath": "D:\\Asoft\\BT2\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1.csproj",
+  "projectFilePath": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\TelerikAspNetCoreApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phang\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\phang\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

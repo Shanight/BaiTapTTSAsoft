@@ -104,6 +104,29 @@ namespace TelerikAspNetCoreApp1.Controllers
                 return Json(cmd.ExecuteNonQuery());
             }
         }
+        public ActionResult CheckID([DataSourceRequest] DataSourceRequest request, string UserID)
+        {
+            using (SqlConnection con = new SqlConnection(strConString))
+            {
+                con.Open();
+
+                string checkSql = "SELECT COUNT(*) FROM Users WHERE UserID = @UserID";
+                SqlCommand checkCmd = new SqlCommand(checkSql, con);
+                checkCmd.Parameters.AddWithValue("@UserID", UserID);
+                int existingUserCount = (int)checkCmd.ExecuteScalar();
+                if (existingUserCount > 0)
+                {
+                    // Nếu UserID đã tồn tại, trả về lỗi dưới dạng JSON
+                    ModelState.AddModelError("UserID", "UserID đã tồn tại.");
+                    var errors = ModelState.ToDataSourceResult();
+                    return Json(new { errors });
+                }
+
+                // Nếu UserID không tồn tại, trả về thành công
+                return Json(new { });
+            }
+        }
+
 
         public ActionResult DeleteUser([DataSourceRequest] DataSourceRequest request,string UserID)
         {
