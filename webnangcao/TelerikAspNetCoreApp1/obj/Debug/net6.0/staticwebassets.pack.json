@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\js\\site.min.js"
     },
     {
+      "Id": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\wwwroot\\js\\test1.js",
+      "PackagePath": "staticwebassets\\js\\test1.js"
+    },
+    {
       "Id": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },

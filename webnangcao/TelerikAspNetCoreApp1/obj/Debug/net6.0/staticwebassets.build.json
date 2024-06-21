@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3zT67pop73cffqazeK4BiT3Xj+t/j7+f0DtoG2QB2ig=",
+  "Hash": "klvzqt8/prqQlhb77qVg+jMI3ARTarxjuuQIM0tnl7A=",
   "Source": "TelerikAspNetCoreApp1",
   "BasePath": "_content/TelerikAspNetCoreApp1",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.min.js"
+    },
+    {
+      "Identity": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\wwwroot\\js\\test1.js",
+      "SourceId": "TelerikAspNetCoreApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\wwwroot\\",
+      "BasePath": "_content/TelerikAspNetCoreApp1",
+      "RelativePath": "js/test1.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\test1.js"
     },
     {
       "Identity": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",

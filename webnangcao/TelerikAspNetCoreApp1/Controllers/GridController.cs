@@ -87,10 +87,19 @@ namespace TelerikAspNetCoreApp1.Controllers
             }
         }
 
-        public ActionResult UpdateUser([DataSourceRequest] DataSourceRequest request, string UserID, string UserName, string Password, string Email, string Tel, string Disabled)
+        public ActionResult UpdateUser([DataSourceRequest] DataSourceRequest request, string UserID, string UserName, string Password, string Email, string Tel, bool Disabled)
         {
             using (SqlConnection con = new SqlConnection(strConString))
             {
+                string Disabled1 = "0";
+                if (Disabled == true)
+                {
+                    Disabled1 = "1";
+                }
+                else
+                {
+                    Disabled1 = "0";
+                }
                 con.Open();
                 string query = "Update Users SET UserID=@UserID, UserName=@UserName, Password=@Password, Email=@Email, Tel=@Tel, Disabled=@Disabled where UserID=@UserID";
 
@@ -100,11 +109,11 @@ namespace TelerikAspNetCoreApp1.Controllers
                 cmd.Parameters.AddWithValue("@Password", Password);
                 cmd.Parameters.AddWithValue("@Email", Email);
                 cmd.Parameters.AddWithValue("@Tel", Tel);
-                cmd.Parameters.AddWithValue("@Disabled", Disabled);
+                cmd.Parameters.AddWithValue("@Disabled", Disabled1);
                 return Json(cmd.ExecuteNonQuery());
             }
         }
-        public ActionResult CheckID([DataSourceRequest] DataSourceRequest request, string UserID)
+        public ActionResult CheckID(string UserID)
         {
             using (SqlConnection con = new SqlConnection(strConString))
             {
@@ -116,13 +125,13 @@ namespace TelerikAspNetCoreApp1.Controllers
                 int existingUserCount = (int)checkCmd.ExecuteScalar();
                 if (existingUserCount > 0)
                 {
-                    // Nếu UserID đã tồn tại, trả về lỗi dưới dạng JSON
+                    // UserID đã tồn tại, tạo một ModelStateError và trả về dưới dạng JSON
                     ModelState.AddModelError("UserID", "UserID đã tồn tại.");
                     var errors = ModelState.ToDataSourceResult();
                     return Json(new { errors });
                 }
 
-                // Nếu UserID không tồn tại, trả về thành công
+                // UserID không tồn tại, trả về một JSON trống để chỉ định rằng không có lỗi xảy ra
                 return Json(new { });
             }
         }

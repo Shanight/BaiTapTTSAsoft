@@ -24,6 +24,10 @@
     <None Remove="Templates\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\js\test1.js" />
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties UseCdnSupport="True" /></VisualStudio></ProjectExtensions>
   
 </Project>

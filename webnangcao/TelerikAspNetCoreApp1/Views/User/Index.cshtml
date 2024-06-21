@@ -15,7 +15,11 @@
         align-items: center;
         justify-content: center;
     }
+    .an{
+        display:none;
+    }
 </style>
+
 <button id="createBtn" class="k-button k-button-solid-base k-button-solid k-button-md k-rounded-md">Create</button>
 
 
@@ -31,17 +35,16 @@
         columns.Bound(p => p.Disabled).Width(120).Title("Disabled").ClientTemplate("#= Disabled ? 'True' : 'False' #");
         columns.Command(command =>
         {
-            command.Edit().Template("<button class='k-button k-grid-edit-command'>Sửa</button>");
+            command.Edit();
             command.Destroy().Template("<button class='k-button k-grid-delete'>Xóa</button>");
         }).Width(200).Title("Thực hiện");
     })
-    .ToolBar(toolbar => toolbar.Create())
     .Editable(editable =>editable
         .Mode(GridEditMode.PopUp)
-        .TemplateName("CampaignEdit")
+        .TemplateComponentName("CustomPopupEditor")
         .Window(w =>
         {
-            w.Width(400);
+            w.Width(500);
             w.Title("Edit Details");
         })
     )
@@ -60,22 +63,7 @@
         .Destroy(update => update.Action("DeleteUser", "Grid"))
     )
 )
-<script type="kendo-template" id="my-template">
-    <em>#= IDUser  # </em>
-</script>
-<script>
-    function showProducts(data) {
-        if (data.Users) {
-            var template = "<ul>";
-            for (var i = 0; i < data.Users.length; i++) {
-                var user = data.UserID[i];
-                template += kendo.format("<li>UserID: {0}, Username: {1:c} </li>", Users.UserID, Users.UserName);
-            }
-            template += "</ul>"
-            return template;
-        }
-    }
-</script>
+
 <script>
     function edit(e) {
         // check for a property of the model which is being edited
@@ -99,76 +87,56 @@
             alert(message);
         }
     }
-</script>
 
+</script>
+<script src="~/js/test1.js"></script>
 <script>
     //delete button
     $(document).on("click", ".k-grid-delete", function () {
         var grid = $("#grid").data("kendoGrid");
         var dataItem = grid.dataItem($(this).closest("tr"));
-        // Prompt user to confirm by entering the UserID again
-        kendo.prompt("To confirm deletion, please enter the UserID (" + dataItem.UserID + "):").then(function (result) {
+        // hiện thông báo xác nhận xóa, phải nhập đúng UesrID mới cho xóa
+        kendo.prompt("Bạn muốn xóa không? <br/>Để xóa, vui lòng nhập đúng UserID (" + dataItem.UserID + "):").then(function (result) {
             if (result === dataItem.UserID) {
-                // Perform the delete action
+                // Kiểm tra UserID có nhập đúng không
                 $.ajax({
                     url: "@Url.Action("DeleteUser", "Grid")",
                     type: "POST",
                     data: { userId: dataItem.UserID },
                     success: function (result) {
-                        // Refresh the grid
+                        // Nếu đúng sẽ xóa 
                         grid.dataSource.read();
                     },
                     error: function (xhr, status, error) {
-                        alert("An error occurred while deleting the record.");
+                        //Hiện lỗi nếu có bất cứ lỗi gì xảy ra từ server
+                        alert("Lỗi từ server, vui lòng thử lại sau");
                     }
                 });
             } else {
-                // Inform user that deletion was canceled
-                alert("Deletion canceled. You entered a different UserID.");
+                // Nếu sai thì sẽ báo lỗi
+                alert("UserID không trùng khớp, vui lòng nhập lại");
             }
         });
     });
     //end delete button
 
-    //edit button
-    $(document).on("click", ".k-grid-edit-command", function () {
-        var grid = $("#grid").data("kendoGrid");
-        var dataItem = grid.dataItem($(this).closest("tr"));
-        // Prompt user to confirm by entering the UserID again
-        kendo.prompt("To confirm edit, please enter the UserID (" + dataItem.UserID + "):").then(function (result) {
-            if (result === dataItem.UserID) {
-                // Perform the delete action
-                $.ajax({
-                    url: "@Url.Action("UpdateUser", "Grid")",
-                    type: "POST",
-                    data: { userId: dataItem.UserID },
-                    success: function (result) {
-                        // Refresh the grid
-                        grid.dataSource.read();
-                    },
-                    error: function (xhr, status, error) {
-                        alert("An error occurred while deleting the record.");
-                    }
-                });
-            } else {
-                // Inform user that deletion was canceled
-                alert("Deletion canceled. You entered a different UserID.");
-            }
-        });
-    });
-    //end edit button
-
     
+    
+    //form đăng ký user    
     $("#createBtn").on("click", function () {
-        var promptTemplate = '<div>' +
-            '<label for="UserID">Id:</label><input id="UserID" type="text" class="form-control k-input-solid"><br>' +
+        //form để nhập
+        var promptTemplate = '<div style="width:500px;">' +
+            '<label for="UserID">Id:</label><input id="UserID" type="text" style="text-transform:uppercase;" class="form-control k-input-solid"><br>' +
             '<label for="UserName">UserName:</label><input id="UserName" type="text" class="form-control k-input-solid"><br>' +
-            '<label for="Password">Password:</label><input id="Password" type="password" class="form-control k-input-solid"><br>' +
-            '<label for="Email">Email:</label><input id="Email" type="email" class="form-control k-input-solid"><br>' +
+            '<label for="Password1">Password:</label><input id="Password1" type="password" class="form-control k-input-solid"><br>' +
+            '<label for="Password2">Nhập lại Password:</label><input id="Password2" type="password" class="form-control k-input-solid"><br>' +
+            '<label for="Email">Email:</label><input id="Emailcheck" type="email" class="form-control k-input-solid" oninput="checkEmail()"><br>' +
+            '<div id="checkemail"></div>' +
+            '<input id="Email" type="email" class="form-control k-input-solid" disabled style="display:none;"><br>' +
             '<label for="Tel">Tel:</label><input id="Tel" type="tel" class="form-control k-input-solid"><br>' +
             '<label for="Disabled">Disabled:</label><input id="Disabled" type="checkbox">' +
             '</div>';
-
+        //hiện form
         var createWindow = $("<div>").kendoWindow({
             title: "Create User",
             visible: false,
@@ -176,77 +144,110 @@
             resizable: false
         }).data("kendoWindow");
 
+        //lấy form trên và mở
         createWindow.content(promptTemplate);
         createWindow.center().open();
 
-        var submitBtn = $('<button class="k-button k-button-solid-base k-button-solid k-button-md k-rounded-md">Submit</button>');
+        var submitBtn = $('<button class="k-button k-button-solid-base k-button-solid k-button-md k-rounded-md ">Submit</button>');
+        //Khi nhấn nút nhập
         submitBtn.on("click", function () {
+            // lấy giá trị từng ID
             var userId = $("#UserID").val();
             var userName = $("#UserName").val();
-            var password = $("#Password").val();
+            var password1 = $("#Password1").val();
+            var password2 = $("#Password2").val();
             var email = $("#Email").val();
             var tel = $("#Tel").val();
             var disabled = $("#Disabled").is(":checked") ? "1" : "0";
-
             // Kiểm tra dữ liệu nhập vào
-            if (userId && userName && password && email && tel) {
-                // Kiểm tra ID đã tồn tại trong cơ sở dữ liệu hay chưa
-                var urlCheckID = '/Grid/CheckID';
-                $.ajax({
-                    url: urlCheckID,
-                    type: 'POST',
-                    data: { UserID: userId },
-                    success: function (response) {
-                        if (response.exists) {
-                            kendo.alert("ID đã tồn tại. vui lòng chọn cái khác");
-                        } else {
-                            // Gửi dữ liệu lên server thông qua AJAX
-                            var urlCreateUser = '/Grid/CreateUser';
+            if (kiemtraemail == "1") {
+                if (userId && userName && password1 && password2 && email && tel && Emailcheck) {
+                    //Kiểm tra ID có khoảng trắng hay không
+                    if (/\s/.test(userId)) {
+                        kendo.alert("Lỗi,IDUser không được có khoảng trắng");
+                    } else {
+                        //kiểm tra trùng mật khẩu
+                        if (password1 == password2) {
+
+                            // Kiểm tra ID đã tồn tại trong cơ sở dữ liệu hay chưa
+                            var urlCheckID = '/Grid/CheckID';
                             $.ajax({
-                                url: urlCreateUser,
+                                url: urlCheckID,
                                 type: 'POST',
-                                data: {
-                                    UserID: userId,
-                                    UserName: userName,
-                                    Password: password,
-                                    Email: email,
-                                    Tel: tel,
-                                    Disabled: disabled
-                                },
+                                data: { UserID: userId },
                                 success: function (response) {
-                                    // Xử lý khi gửi dữ liệu thành công
-                                    kendo.alert("Tạo User thành công.");
-                                    createWindow.element.append(resetBTN);
+                                    if (response.errors) {
+                                        kendo.alert("ID đã tồn tại. vui lòng chọn cái khác");
+                                    } else {
+                                        // Gửi dữ liệu lên server thông qua AJAX
+                                        var urlCreateUser = '/Grid/CreateUser';
+                                        $.ajax({
+                                            url: urlCreateUser,
+                                            type: 'POST',
+                                            data: {
+                                                UserID: userId.toUpperCase(),
+                                                UserName: userName,
+                                                Password: password2,
+                                                Email: email,
+                                                Tel: tel,
+                                                Disabled: disabled
+                                            },
+                                            success: function (response) {
+                                                // Xử lý khi gửi dữ liệu thành công
+                                                kendo.alert("Tạo User thành công.");
+                                                //khi nhập thành công thì mới xuất hiện nút reset này
+                                                createWindow.element.append(resetBTN);
+                                                resetBTN.removeClass("an");
+                                                submitBtn.addClass("an");
+                                            },
+                                            error: function (xhr, status, error) {
+                                                // Xử lý khi gửi dữ liệu gặp lỗi
+                                                kendo.alert("Tạo user thất bại.");
+                                            }
+                                        });
+                                    }
                                 },
                                 error: function (xhr, status, error) {
-                                    // Xử lý khi gửi dữ liệu gặp lỗi
-                                    kendo.alert("Tạo user thất bại.");
+                                    // Xử lý khi kiểm tra ID gặp lỗi
+                                    kendo.alert("Lỗi ID.");
                                 }
                             });
+                        } else {
+                            kendo.alert("Mật khẩu không trùng khớp, vui lòng kiểm tra lại");
                         }
-                    },
-                    error: function (xhr, status, error) {
-                        // Xử lý khi kiểm tra ID gặp lỗi
-                        kendo.alert("Lỗi ID.");
+
                     }
-                });
+                } else {
+                    //Xử lý khi không nhập đầy đủ thông tin
+                    kendo.alert("Vui lòng nhập đầy đủ thông tin.");
+                }
             } else {
-                kendo.alert("Vui lòng nhập đầy đủ thông tin.");
+                kendo.alert("Vui lòng nhập đúng định dạng email VD:test1@gmail.com");
             }
+            
         });
 
-        var resetBTN = $('<button class="k-button k-button-solid-base k-button-solid k-button-md k-rounded-md">Nhập tiếp</button>');
+        //nút reset/nhập tiếp sẽ xóa các giá trị hiện tại
+        var resetBTN = $('<button class="k-button k-button-solid-base k-button-solid k-button-md k-rounded-md an">Nhập tiếp</button>');
         resetBTN.on("click", function () {
             $("#UserID").val("");
             $("#UserName").val("");
-            $("#Password").val("");
+            $("#Password1").val("");
+            $("#Password2").val("");
             $("#Email").val("");
             $("#Tel").val("");
+            $("#Emailcheck").val("");
             $("#Disabled").prop("checked", false);
-        });
+            resetBTN.addClass("an");
+            submitBtn.removeClass("an")
 
+        });
+        //cho xuất hiện nút submit
         createWindow.element.append(submitBtn);
     });
+    //kết thúc form đăng ký user
 
+
+   
 </script>
 
