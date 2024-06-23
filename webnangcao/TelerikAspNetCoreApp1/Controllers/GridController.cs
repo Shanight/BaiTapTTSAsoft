@@ -87,30 +87,22 @@ namespace TelerikAspNetCoreApp1.Controllers
             }
         }
 
-        public ActionResult UpdateUser([DataSourceRequest] DataSourceRequest request, string UserID, string UserName, string Password, string Email, string Tel, bool Disabled)
+        public ActionResult UpdateUser([DataSourceRequest] DataSourceRequest request, string UserID, string UserName, string Password, string Email, string Tel, string Disabled)
         {
             using (SqlConnection con = new SqlConnection(strConString))
             {
-                string Disabled1 = "0";
-                if (Disabled == true)
-                {
-                    Disabled1 = "1";
-                }
-                else
-                {
-                    Disabled1 = "0";
-                }
                 con.Open();
                 string query = "Update Users SET UserID=@UserID, UserName=@UserName, Password=@Password, Email=@Email, Tel=@Tel, Disabled=@Disabled where UserID=@UserID";
 
                 SqlCommand cmd = new SqlCommand(query, con);
+
                 cmd.Parameters.AddWithValue("@UserID", UserID.ToUpper());
                 cmd.Parameters.AddWithValue("@UserName", UserName);
                 cmd.Parameters.AddWithValue("@Password", Password);
                 cmd.Parameters.AddWithValue("@Email", Email);
                 cmd.Parameters.AddWithValue("@Tel", Tel);
-                cmd.Parameters.AddWithValue("@Disabled", Disabled1);
-                return Json(cmd.ExecuteNonQuery());
+                cmd.Parameters.AddWithValue("@Disabled", Disabled );
+                return Json(cmd.ExecuteNonQuery(), new {success="Thành công"});
             }
         }
         public ActionResult CheckID(string UserID)
@@ -149,5 +141,9 @@ namespace TelerikAspNetCoreApp1.Controllers
             }
         }
 
+        internal int UpdateUser(string userID, string userName, string password, string email, string tel, string disabled)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

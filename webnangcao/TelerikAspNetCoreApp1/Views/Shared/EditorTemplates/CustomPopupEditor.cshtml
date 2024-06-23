@@ -1,34 +1,41 @@
 ﻿@using Newtonsoft.Json.Linq
 @model TelerikAspNetCoreApp1.Models.Users
+    @using TelerikAspNetCoreApp1.Models
 
 @(
-    Html.Kendo().Template()
-        .AddHtml("<div class=\"k-edit-field\" style=\"400px\">")
-        .AddComponent(tbox => tbox
-            .TextBoxFor(model => model.UserID)
-            .Label(l => l.Content("ID:").Floating(true))
-            .HtmlAttributes(new { @readonly = "readonly" })
-        )
-        .AddComponent(tbox => tbox
-            .TextBoxFor(model => model.UserName)
-            .Label(l => l.Content("Full name:").Floating(true))
-        )
-        .AddComponent(tbox => tbox
-            .TextBoxFor(model => model.Password)
-            .Label(l => l.Content("Password:").Floating(true))
-        )
-        .AddComponent(tbox => tbox
-            .TextBoxFor(model => model.Email)
-            .Label(l => l.Content("Email:").Floating(true))
-        )
-        .AddComponent(tbox => tbox
-            .TextBoxFor(model => model.Tel)
-            .Label(l => l.Content("Tel:").Floating(true))
-        )
-        .AddHtml("<input type=\"text\" id=\"UserName\" name=\"UserName\"  />")
+Html.Kendo().Template()
+                    .AddHtml("<div class=\"k-edit-field\" style=\"400px\">")
 
-        .AddHtml("<label for=\"Disabled\" value=\"@(Model.Disabled)\">Disabled: </label>")
-        .AddHtml("<input type=\"checkbox\" name=\"Disabled\" />")
-        
-        .AddHtml("</div>")
+                    .AddComponent(tbox => tbox
+                        .TextBoxFor(model => model.UserID)
+                        .Label(l => l.Content("ID:").Floating(true))
+                        .HtmlAttributes(new { @readonly = "readonly" })
+                    )
+                    .AddComponent(tbox => tbox
+                        .TextBoxFor(model => model.UserName)
+                        .Label(l => l.Content("Full name:").Floating(true))
+                    )
+                    .AddComponent(tbox => tbox
+                        .TextBoxFor(model => model.Password)
+                        .Label(l => l.Content("Password:").Floating(true))
+                    )
+                    .AddComponent(tbox => tbox
+    .TextBoxFor(model => model.Email)
+    .Label(l => l.Content("Email:").Floating(true))
+    .HtmlAttributes(new { oninput = "onEmailChange(this)" })
 )
+                    .AddComponent(tbox => tbox
+                        .TextBoxFor(model => model.Tel)
+                        .Label(l => l.Content("Tel:").Floating(true))
+                    )
+                    
+
+        .AddHtml("<label for=\"Disabled\">Disabled: </label>")
+        .AddHtml("<select id=\"Disabled\" name=\"Disabled\">")
+            .AddHtml("<option value=\"0\">False</option>")
+            .AddHtml("<option value=\"1\">True</option>")
+        .AddHtml("</select>")
+        .AddHtml("</div>")
+        
+)
+

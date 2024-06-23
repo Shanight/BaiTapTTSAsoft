@@ -8,6 +8,7 @@ using System.Globalization;
 using TelerikAspNetCoreApp1.Models;
 using System.Web.Mvc;
 using System.Data.SqlClient;
+using System;
 
 namespace TelerikAspNetCoreApp1.Controllers
 {
@@ -65,15 +66,24 @@ namespace TelerikAspNetCoreApp1.Controllers
         // POST: UserController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult update(FormCollection collection, string action)
         {
-            try
+            if (action == "Submit")
             {
-                return RedirectToAction(nameof(Index));
+                GridController model = new GridController();
+                string UserID = collection["UserID"];
+                string UserName = collection["UserName"];
+                string Password = collection["Password"];
+                string Email = collection["Email"];
+                string Tel = collection["Tel"];
+                string Disabled = collection["Disabled"] != "" ? collection["Disabled"] : "0";
+
+                int status = model.UpdateUser(UserID, UserName, Password, Email, Tel, Disabled);
+                return RedirectToAction("Index");
             }
-            catch
+            else
             {
-                return View();
+                return RedirectToAction("Index");
             }
         }
 
