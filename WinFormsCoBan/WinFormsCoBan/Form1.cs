@@ -6,6 +6,8 @@ namespace WinFormsCoBan
 {
     public partial class Form1 : Form
     {
+        private int changeIntoCheckBoxColumnOneTimeFlag = 0;
+
         string constring = @"Data Source=.\SQLEXPRESS;Initial Catalog=test1asoft;User id=sa;password=123456";
 
         public Form1()
@@ -23,33 +25,49 @@ namespace WinFormsCoBan
             this.loaddata();
         }
 
-        private void loaddata()
+        public void loaddata()
         {
             using (SqlConnection con = new SqlConnection(constring))
             {
-                using (SqlCommand cmd = new SqlCommand("select ROW_NUMBER() OVER (ORDER BY UserID) AS [STT], UserID as \"Mã nhân viên\", UserName as \"Tên nhân viên\", Email, Tel as \"Số điện thoại\", Disabled from Users", con))
+                SqlCommand cmd = new SqlCommand("SELECT ROW_NUMBER() OVER (ORDER BY UserID) AS [STT], UserID AS [Mã nhân viên], UserName AS [Tên nhân viên], Email, Tel AS [Số điện thoại], Disabled AS [Không hiển thị] FROM Users", con);
+
+
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+
+
+                DataTable dt = new DataTable();
+
+                // Add CheckBox column to DataGridView
+                DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
+                checkBoxColumn.HeaderText = "Không hiển thị";
+                checkBoxColumn.Name = "Disabled";
+                checkBoxColumn.DataPropertyName = "Không hiển thị";
+                checkBoxColumn.FalseValue = 0;
+                checkBoxColumn.TrueValue = 1;
+
+                try
                 {
-                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    // Fill the DataTable   using SqlDataAdapter
+                    sda.Fill(dt);
+
+                    // Set the DataSource of userGridView to the filled DataTable
+                    dataGridView2.DataSource = dt;
+
+                    if (changeIntoCheckBoxColumnOneTimeFlag == 0)
                     {
-                        using (DataTable dt = new DataTable())
-                        {
-                            sda.Fill(dt);
-                            DataGridViewCheckBoxColumn checkboxColumn = new DataGridViewCheckBoxColumn
-                            {
-                                DataPropertyName = "Disabled",
-                                HeaderText = "Không hiển thị",
-                                Name = "DisabledColumn",
-                                TrueValue = "1",
-                                FalseValue = "0"
-                            };
-                            if (!dataGridView2.Columns.Contains("DisabledColumn")) // Check if the column already exists
-                            {
-                                dataGridView2.Columns.Add(checkboxColumn);
-                                
-                            }
-                            dataGridView2.DataSource = dt;
-                        }
+                        // Replace existing column in DataGridView
+                        dataGridView2.Columns.Remove("Không hiển thị"); // Remove existing column if necessary
+                        dataGridView2.Columns.Add(checkBoxColumn); // Add new CheckBox column
+                        changeIntoCheckBoxColumnOneTimeFlag++;
                     }
+
+                }
+                finally
+                {
+                    // Dispose of the DataTable, SqlDataAdapter, and SqlCommand
+                    dt.Dispose();
+                    sda.Dispose();
+                    cmd.Dispose();
                 }
             }
         }
@@ -66,7 +84,7 @@ namespace WinFormsCoBan
 
         private void Create_Click(object sender, EventArgs e)
         {
-            TaoUser taoUser = new TaoUser();
+            TaoUser taoUser = new TaoUser(this);
             taoUser.ShowDialog();
         }
 
@@ -79,7 +97,7 @@ namespace WinFormsCoBan
                 string UserID = selectedRow.Cells["Mã nhân viên"].Value.ToString();
                 // Get the checkbox value
 
-                UpdateUser updateUser = new UpdateUser();
+                UpdateUser updateUser = new UpdateUser(this);
                 updateUser.UserID = UserID;
 
 

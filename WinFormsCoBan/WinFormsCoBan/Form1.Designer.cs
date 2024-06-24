@@ -39,7 +39,6 @@
             Edit = new ToolStripMenuItem();
             Read = new ToolStripMenuItem();
             Delete = new ToolStripMenuItem();
-            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             contextMenuStrip1.SuspendLayout();
@@ -136,22 +135,11 @@
             Delete.Text = "Xóa";
             Delete.Click += Delete_Click;
             // 
-            // button4
-            // 
-            button4.Location = new Point(462, 412);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 5;
-            button4.Text = "Load lại";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
             Controls.Add(dataGridView2);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -177,6 +165,5 @@
         public ToolStripMenuItem Read;
         public ToolStripMenuItem Delete;
         public ToolStripMenuItem Edit;
-        private Button button4;
     }
 }

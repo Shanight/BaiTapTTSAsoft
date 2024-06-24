@@ -44,6 +44,7 @@ namespace WinFormsCoBan
                 con.Close();
             }
             MessageBox.Show("Xóa thành công");
+            mainForm.loaddata();
             this.Close();
         }
     }

@@ -130,6 +130,7 @@
             password1.Name = "password1";
             password1.Size = new Size(206, 27);
             password1.TabIndex = 9;
+            password1.UseSystemPasswordChar = true;
             // 
             // email
             // 

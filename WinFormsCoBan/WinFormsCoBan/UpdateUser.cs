@@ -15,12 +15,14 @@ namespace WinFormsCoBan
 {
     public partial class UpdateUser : Form
     {
+        private Form1 form1get;
         string constring = @"Data Source=.\SQLEXPRESS;Initial Catalog=test1asoft;User id=sa;password=123456";
         public string UserID { get; set; }
         
-        public UpdateUser()
+        public UpdateUser(Form1 form1)
         {
             InitializeComponent();
+            form1get = form1;
         }
         private void update_load(object sender, EventArgs e)
         {
@@ -110,6 +112,7 @@ namespace WinFormsCoBan
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show("Sửa thành công");
+                    form1get.loaddata();
                 }
                 else
                 {

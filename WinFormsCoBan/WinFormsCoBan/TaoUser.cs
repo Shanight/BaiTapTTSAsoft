@@ -17,9 +17,12 @@ namespace WinFormsCoBan
     public partial class TaoUser : Form
     {
         string checkid = "0";
-        public TaoUser()
+        private Form1 reload;
+
+        public TaoUser(Form1 reload1)
         {
             InitializeComponent();
+            this.reload = reload1;
         }
         private void TaoUser_Load(object sender, EventArgs e)
         {
@@ -54,43 +57,68 @@ namespace WinFormsCoBan
             string EMAIL = email.Text;
             string DISABLED = disabled.Checked ? "1":"0" ;
 
-            if (IDUSER != "" && USERNAME != "" && PASSWORD != "" && EMAIL != "" && PHONENUMBER != "" && PASSWORD1 != "")
+            if(IDUSER != "")
             {
-                if (IDUSER.Trim() == "" || IDUSER.Contains(" "))
+                if(USERNAME != "")
                 {
-                    MessageBox.Show("ID người dùng không được chứa khoảng trắng.");
-                    iduser.Focus();
-                }
-                else
-                {
-                    if (!IsValidEmail(EMAIL))
+                    if (PASSWORD != "")
                     {
-                        MessageBox.Show("Email không hợp lệ.");
-                        email.Focus();
-                    }
-                    else
-                    {
-                        if (PASSWORD == PASSWORD1)
+                        if (EMAIL != "" && PHONENUMBER != "" && PASSWORD1 != "")
                         {
-                            checkUser(IDUSER);
-                            if (checkid == "1")
+                            if (IDUSER.Trim() == "" || IDUSER.Contains(" "))
                             {
-                                createUser(IDUSER, USERNAME, PASSWORD, EMAIL, PHONENUMBER, DISABLED);
+                                MessageBox.Show("ID người dùng không được chứa khoảng trắng.");
+                                iduser.Focus();
+                            }
+                            else
+                            {
+                                if (!IsValidEmail(EMAIL))
+                                {
+                                    MessageBox.Show("Email không hợp lệ.");
+                                    email.Focus();
+                                }
+                                else
+                                {
+                                    if (PASSWORD == PASSWORD1)
+                                    {
+                                        checkUser(IDUSER);
+                                        if (checkid == "1")
+                                        {
+                                            createUser(IDUSER, USERNAME, PASSWORD, EMAIL, PHONENUMBER, DISABLED);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Mật khẩu không khớp, vui lòng nhập lại");
+                                        password.Focus();
+                                    }
+                                }
+
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Mật khẩu không khớp, vui lòng nhập lại");
-                            password.Focus();
+                            MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                         }
                     }
-
+                    else
+                    {
+                        MessageBox.Show("Vui lòng nhập mật khẩu");
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập UserName");
+                    username.Focus();
+                }
+                
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                MessageBox.Show("Vui lòng nhập ID User");
+                iduser.Focus();
             }
+            
         }
 
        
@@ -126,9 +154,11 @@ namespace WinFormsCoBan
 
                 if (rowsAffected > 0)
                 {
+                    reload.loaddata();
                     button3.Visible = true;
                     button2.Visible = false;
                     MessageBox.Show("Thêm thành công");
+                    
                 }
                 else
                 {
