@@ -39,6 +39,7 @@
             Edit = new ToolStripMenuItem();
             Read = new ToolStripMenuItem();
             Delete = new ToolStripMenuItem();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             contextMenuStrip1.SuspendLayout();
@@ -54,8 +55,9 @@
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "Trợ giúp";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -87,47 +89,69 @@
             dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.RowTemplate.Height = 29;
+            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView2.Size = new Size(776, 371);
             dataGridView2.TabIndex = 4;
+            dataGridView2.CellMouseClick += clickfocus;
+            dataGridView2.MouseClick += click;
             // 
             // contextMenuStrip1
             // 
             contextMenuStrip1.ImageScalingSize = new Size(20, 20);
             contextMenuStrip1.Items.AddRange(new ToolStripItem[] { Create, Edit, Read, Delete });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(116, 100);
+            contextMenuStrip1.Size = new Size(169, 100);
+            contextMenuStrip1.TabStop = true;
             // 
             // Create
             // 
             Create.Name = "Create";
-            Create.Size = new Size(115, 24);
+            Create.ShortcutKeyDisplayString = "";
+            Create.ShortcutKeys = Keys.Control | Keys.N;
+            Create.Size = new Size(168, 24);
             Create.Text = "Thêm";
             Create.Click += Create_Click;
             // 
             // Edit
             // 
             Edit.Name = "Edit";
-            Edit.Size = new Size(115, 24);
+            Edit.ShortcutKeys = Keys.Control | Keys.E;
+            Edit.Size = new Size(168, 24);
             Edit.Text = "Sửa";
             Edit.Click += Edit_Click;
             // 
             // Read
             // 
             Read.Name = "Read";
-            Read.Size = new Size(115, 24);
+            Read.ShortcutKeys = Keys.Control | Keys.V;
+            Read.Size = new Size(168, 24);
             Read.Text = "Xem";
+            Read.Click += Read_Click;
             // 
             // Delete
             // 
             Delete.Name = "Delete";
-            Delete.Size = new Size(115, 24);
+            Delete.ShortcutKeys = Keys.Control | Keys.D;
+            Delete.Size = new Size(168, 24);
             Delete.Text = "Xóa";
+            Delete.Click += Delete_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(462, 412);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 29);
+            button4.TabIndex = 5;
+            button4.Text = "Load lại";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(dataGridView2);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -148,10 +172,11 @@
         private Button button3;
         private DataGridView dataGridView2;
         private ContextMenuStrip contextMenuStrip1;
-        private ToolStripMenuItem Create;
-        private ToolStripMenuItem Read;
-        private ToolStripMenuItem Delete;
-        private ToolStripMenuItem Edit;
         private ToolStripMenuItem test1ToolStripMenuItem;
+        public ToolStripMenuItem Create;
+        public ToolStripMenuItem Read;
+        public ToolStripMenuItem Delete;
+        public ToolStripMenuItem Edit;
+        private Button button4;
     }
 }

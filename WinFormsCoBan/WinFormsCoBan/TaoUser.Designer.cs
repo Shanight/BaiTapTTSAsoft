@@ -102,6 +102,8 @@
             // 
             // iduser
             // 
+            iduser.CharacterCasing = CharacterCasing.Upper;
+            iduser.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             iduser.Location = new Point(151, 29);
             iduser.Name = "iduser";
             iduser.Size = new Size(206, 27);
@@ -175,7 +177,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(63, 300);
+            button3.Location = new Point(163, 300);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 15;
@@ -206,6 +208,7 @@
             Controls.Add(label1);
             Name = "TaoUser";
             Text = "TaoUser";
+            Load += TaoUser_Load;
             ResumeLayout(false);
             PerformLayout();
         }

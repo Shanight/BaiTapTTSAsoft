@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsCoBan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f808f6b04f18e16154e8a5b7427fc09d3a2de58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42bb4c2ddee73aa29c3d827cbfeebf08f0ee08e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsCoBan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsCoBan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

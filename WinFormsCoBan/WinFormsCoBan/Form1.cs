@@ -1,9 +1,13 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Windows.Forms;
 namespace WinFormsCoBan
 {
     public partial class Form1 : Form
     {
+        string constring = @"Data Source=.\SQLEXPRESS;Initial Catalog=test1asoft;User id=sa;password=123456";
+
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +25,6 @@ namespace WinFormsCoBan
 
         private void loaddata()
         {
-            string constring = @"Data Source=.\SQLEXPRESS;Initial Catalog=test1asoft;User id=sa;password=123456";
             using (SqlConnection con = new SqlConnection(constring))
             {
                 using (SqlCommand cmd = new SqlCommand("select ROW_NUMBER() OVER (ORDER BY UserID) AS [STT], UserID as \"Mã nhân viên\", UserName as \"Tên nhân viên\", Email, Tel as \"Số điện thoại\", Disabled from Users", con))
@@ -31,8 +34,6 @@ namespace WinFormsCoBan
                         using (DataTable dt = new DataTable())
                         {
                             sda.Fill(dt);
-
-                            // Change the "Không hiển thị" column to a checkbox column
                             DataGridViewCheckBoxColumn checkboxColumn = new DataGridViewCheckBoxColumn
                             {
                                 DataPropertyName = "Disabled",
@@ -41,12 +42,11 @@ namespace WinFormsCoBan
                                 TrueValue = "1",
                                 FalseValue = "0"
                             };
-
-                            // Add the checkbox column to the DataGridView
-                            dataGridView2.Columns.Add(checkboxColumn);
-
-
-                            // Set the DataSource of the DataGridView
+                            if (!dataGridView2.Columns.Contains("DisabledColumn")) // Check if the column already exists
+                            {
+                                dataGridView2.Columns.Add(checkboxColumn);
+                                
+                            }
                             dataGridView2.DataSource = dt;
                         }
                     }
@@ -72,7 +72,89 @@ namespace WinFormsCoBan
 
         private void Edit_Click(object sender, EventArgs e)
         {
+            if (dataGridView2.SelectedRows.Count > 0) // Check if any row is selected
+            {
+                DataGridViewRow selectedRow = dataGridView2.SelectedRows[0]; // Get the first selected row
 
+                string UserID = selectedRow.Cells["Mã nhân viên"].Value.ToString();
+                // Get the checkbox value
+
+                UpdateUser updateUser = new UpdateUser();
+                updateUser.UserID = UserID;
+
+
+                // Pass the data to the UpdateUser form
+                updateUser.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một dòng để sửa!");
+            }
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView2.SelectedRows.Count > 0) // Check if any row is selected
+            {
+                DataGridViewRow selectedRow = dataGridView2.SelectedRows[0]; // Get the first selected row
+
+                string UserID = selectedRow.Cells["Mã nhân viên"].Value.ToString();
+                // Get the checkbox value
+                Form1 mainForm = new Form1();
+                Delete delete = new Delete(mainForm);
+                delete.UserID = UserID;
+                // Pass the data to the UpdateUser form
+                delete.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một dòng để xóa!");
+            }
+        }
+
+        private void Read_Click(object sender, EventArgs e)
+        {
+            if (dataGridView2.SelectedRows.Count > 0) // Check if any row is selected
+            {
+                DataGridViewRow selectedRow = dataGridView2.SelectedRows[0]; // Get the first selected row
+
+                string UserID = selectedRow.Cells["Mã nhân viên"].Value.ToString();
+                // Get the checkbox value
+
+                Xem xem = new Xem();
+                xem.UserID = UserID;
+
+
+                // Pass the data to the UpdateUser form
+                xem.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một dòng để sửa!");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void click(object sender, MouseEventArgs e)
+        {
+        }
+
+
+        private void clickfocus(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                contextMenuStrip1.Show(Cursor.Position);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            loaddata();
         }
     }
 }

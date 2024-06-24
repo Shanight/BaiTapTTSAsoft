@@ -70,3 +70,6 @@ D:\Asoft\BaiTapTTSAsoft\WinFormsCoBan\WinFormsCoBan\bin\Debug\net6.0-windows\run
 D:\Asoft\BaiTapTTSAsoft\WinFormsCoBan\WinFormsCoBan\obj\Debug\net6.0-windows\WinFormsCoBan.csproj.AssemblyReference.cache
 D:\Asoft\BaiTapTTSAsoft\WinFormsCoBan\WinFormsCoBan\obj\Debug\net6.0-windows\WinForms.BA461B0F.Up2Date
 D:\Asoft\BaiTapTTSAsoft\WinFormsCoBan\WinFormsCoBan\obj\Debug\net6.0-windows\WinFormsCoBan.TaoUser.resources
+D:\Asoft\BaiTapTTSAsoft\WinFormsCoBan\WinFormsCoBan\obj\Debug\net6.0-windows\WinFormsCoBan.UpdateUser.resources
+D:\Asoft\BaiTapTTSAsoft\WinFormsCoBan\WinFormsCoBan\obj\Debug\net6.0-windows\WinFormsCoBan.Delete.resources
+D:\Asoft\BaiTapTTSAsoft\WinFormsCoBan\WinFormsCoBan\obj\Debug\net6.0-windows\WinFormsCoBan.Xem.resources
