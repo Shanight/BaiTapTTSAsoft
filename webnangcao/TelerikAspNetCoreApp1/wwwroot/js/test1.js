@@ -30,22 +30,11 @@ function updateDisabledValue(checkbox) {
         
 }
 
-function validateEmail(email) {
-    // Biểu thức chính quy để kiểm tra định dạng email
-    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-function onEmailChange(e) {
-    alert("test1");
-    var email = e.sender.value();
-    var isValid = validateEmail(email);
 
-    // Hiển thị thông báo lỗi nếu email không hợp lệ
-    if (!isValid) {
-        e.sender.addClass("k-invalid");
-        e.sender.attr("title", "Email không hợp lệ");
-    } else {
-        e.sender.removeClass("k-invalid");
-        e.sender.attr("title", "");
-    }
+function onEmailChange() {
+    var emailcheck = document.getElementById("Email").value;
+    alert(emailcheck);
+    
+
+    
 }

@@ -10,11 +10,7 @@
 
 
 <style>
-    .container-fluid{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
     .an{
         display:none;
     }
@@ -23,27 +19,30 @@
         border: 1px solid red;
     }
 </style>
+<div>
+    <button id="createBtn" class="k-button k-button-solid-base k-button-solid k-button-md k-rounded-md">Create</button>
 
-<button id="createBtn" class="k-button k-button-solid-base k-button-solid k-button-md k-rounded-md">Create</button>
-
-
-@(Html.Kendo().Grid<TelerikAspNetCoreApp1.Models.Users>()
-    .Name("grid")
-     .Events(e => e.Edit("edit"))
-    .Columns(columns =>
-    {
-        columns.Bound(p => p.UserID).Width(100).Title("ID");
-        columns.Bound(p => p.UserName).Width(120).Title("Tên người dùng");
-        columns.Bound(p => p.Email).Width(120).Title("Email");
-        columns.Bound(p => p.Tel).Width(120).Title("Số điện thoại");
-        columns.Bound(p => p.Disabled).Width(120).Title("Disabled").ClientTemplate("#= Disabled ? 'True' : 'False' #");
-        columns.Command(command =>
+    <br />
+</div>
+<div>
+    @(Html.Kendo().Grid<TelerikAspNetCoreApp1.Models.Users>()
+        .Name("grid")
+        .Events(e => e.Edit("edit"))
+        .Columns(columns =>
         {
-            command.Edit();
-            command.Destroy().Template("<button class='k-button k-grid-delete'>Xóa</button>");
-        }).Width(200).Title("Thực hiện");
-    })
-    .Editable(editable =>editable
+            columns.Bound(p => p.UserID).Width(100).Title("ID");
+            columns.Bound(p => p.UserName).Width(120).Title("Tên người dùng");
+            columns.Bound(p => p.Email).Width(120).Title("Email");
+            columns.Bound(p => p.Tel).Width(120).Title("Số điện thoại");
+            columns.Bound(p => p.Disabled).Width(120).Title("Disabled").ClientTemplate("#= Disabled ? 'True' : 'False' #");
+            columns.Command(command =>
+            {
+
+                command.Edit();
+                command.Destroy();
+            }).Width(200).Title("Thực hiện");
+        })
+        .Editable(editable => editable
         .Mode(GridEditMode.PopUp)
         .TemplateComponentName("CustomPopupEditor")
         .Window(w =>
@@ -51,12 +50,13 @@
             w.Width(500);
             w.Title("Edit Details");
         })
-    )
-    .Pageable()
-    .Sortable()
-    .Scrollable()
-    .HtmlAttributes(new { style = "height:550px; width: 90%;" })
-    .DataSource(dataSource => dataSource
+        )
+        .Pageable()
+        .Sortable()
+        .Scrollable()
+        .ClientDetailTemplateId("template")
+        .HtmlAttributes(new { style = "height:550px; width: 90%;" })
+        .DataSource(dataSource => dataSource
         .Ajax()
         .PageSize(20)
         .Events(events => events.Error("error_handler"))
@@ -65,8 +65,11 @@
         .Create(update => update.Action("CreateUser", "Grid"))
         .Update(update => update.Action("UpdateUser", "Grid"))
         .Destroy(update => update.Action("DeleteUser", "Grid"))
-    )
-)
+        )
+        )
+</div>
+
+
 
 <script>
     function edit(e) {
@@ -74,6 +77,7 @@
         if (e.model.Type == "Type 1") {
             // manipulate the edit form via jQuery
             e.container.find("label").text("Type 1");
+            
         }
     }
 </script>
@@ -93,36 +97,39 @@
     }
 
 </script>
+
+
+<script id="template" type="text/kendo-tmpl">
+    @(Html.Kendo().TabStrip()
+    // xem chi tiết thông tin
+                .Name("tabStrip_#=UserID#")
+                .SelectedIndex(0)
+                .Animation(animation => animation.Open(open => open.Fade(FadeDirection.In)))
+                .Items(items =>
+                {
+                    
+                    items.Add().Text("Chi tiết").Content(
+                        "<div class='employee-details'>" +
+                            "<ul>" +
+                                    "<li><label>UserID:</label>#= UserID #</li>" +
+                                    "<li><label>Tên người dùng:</label>#= UserName #</li>" +
+                                    "<li><label>Mật khẩu:</label>#= Password #</li>" +
+                                    "<li><label>Email:</label>#= Email #</li>" +
+                                    "<li><label>Số điện thoại:</label>#= Tel #</li>" +
+                                    "<li><label>Tình trạng:</label>#= Disabled ? 'True' : 'False'  #</li>" +
+                            "</ul>" +
+                        "</div>"
+                    );
+                })
+                    // xem chi tiết thông tin
+
+                    .ToClientTemplate())
+
+</script>
+
 <script src="~/js/test1.js"></script>
 <script>
-    //delete button
-    $(document).on("click", ".k-grid-delete", function () {
-        var grid = $("#grid").data("kendoGrid");
-        var dataItem = grid.dataItem($(this).closest("tr"));
-        // hiện thông báo xác nhận xóa, phải nhập đúng UesrID mới cho xóa
-        kendo.prompt("Bạn muốn xóa không? <br/>Để xóa, vui lòng nhập đúng UserID (" + dataItem.UserID + "):").then(function (result) {
-            if (result === dataItem.UserID) {
-                // Kiểm tra UserID có nhập đúng không
-                $.ajax({
-                    url: "@Url.Action("DeleteUser", "Grid")",
-                    type: "POST",
-                    data: { userId: dataItem.UserID },
-                    success: function (result) {
-                        // Nếu đúng sẽ xóa 
-                        grid.dataSource.read();
-                    },
-                    error: function (xhr, status, error) {
-                        //Hiện lỗi nếu có bất cứ lỗi gì xảy ra từ server
-                        alert("Lỗi từ server, vui lòng thử lại sau");
-                    }
-                });
-            } else {
-                // Nếu sai thì sẽ báo lỗi
-                alert("UserID không trùng khớp, vui lòng nhập lại");
-            }
-        });
-    });
-    //end delete button
+    
 
     
     

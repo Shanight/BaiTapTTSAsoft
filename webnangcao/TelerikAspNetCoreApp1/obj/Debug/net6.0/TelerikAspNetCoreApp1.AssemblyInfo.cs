@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TelerikAspNetCoreApp1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4ae3b735fb4260707399ef3f7159897762009e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44fe5c9d363e22f006663d4040bc38cb4a2d92a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TelerikAspNetCoreApp1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TelerikAspNetCoreApp1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

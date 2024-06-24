@@ -22,8 +22,9 @@ Html.Kendo().Template()
                     .AddComponent(tbox => tbox
     .TextBoxFor(model => model.Email)
     .Label(l => l.Content("Email:").Floating(true))
-    .HtmlAttributes(new { oninput = "onEmailChange(this)" })
+    
 )
+.AddHtml("<div id=\"checkemailupdate\"> </div>")
                     .AddComponent(tbox => tbox
                         .TextBoxFor(model => model.Tel)
                         .Label(l => l.Content("Tel:").Floating(true))

@@ -102,7 +102,15 @@ namespace TelerikAspNetCoreApp1.Controllers
                 cmd.Parameters.AddWithValue("@Email", Email);
                 cmd.Parameters.AddWithValue("@Tel", Tel);
                 cmd.Parameters.AddWithValue("@Disabled", Disabled );
-                return Json(cmd.ExecuteNonQuery(), new {success="Thành công"});
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    return Json(new { success = "Dữ liệu đã được chèn thành công." });
+                }
+                else
+                {
+                    return Json(new { errors = "Đã xảy ra lỗi khi chèn dữ liệu." });
+                }
             }
         }
         public ActionResult CheckID(string UserID)
