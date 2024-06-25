@@ -14,6 +14,7 @@
     "additionalProbingPaths": [
       "C:\\Users\\phang\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\phang\\.nuget\\packages",
+      "D:\\Ung dung\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

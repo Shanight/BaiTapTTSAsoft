@@ -41,6 +41,36 @@
           }
         }
       },
+      "C1.Win/8.0.20241.657": {
+        "runtime": {
+          "lib/net6.0-windows7.0/C1.Win.6.dll": {
+            "assemblyVersion": "6.0.20241.657",
+            "fileVersion": "6.0.20241.657"
+          }
+        },
+        "resources": {
+          "lib/net6.0-windows7.0/ja/C1.Win.6.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "C1.Win.C1FlexGrid/4.8.20241.657": {
+        "dependencies": {
+          "C1.Win": "8.0.20241.657",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0"
+        },
+        "runtime": {
+          "lib/net462/C1.Win.C1FlexGrid.4.6.2.dll": {
+            "assemblyVersion": "4.6.20241.657",
+            "fileVersion": "4.6.20241.657"
+          }
+        },
+        "resources": {
+          "lib/net462/ja/C1.Win.C1FlexGrid.4.6.2.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -135,6 +165,25 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "5.2.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -666,6 +715,20 @@
       "path": "azure.identity/1.11.3",
       "hashPath": "azure.identity.1.11.3.nupkg.sha512"
     },
+    "C1.Win/8.0.20241.657": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pYMiEBnOcQ5zP2x0eQl2wXlnpbkadGdoe/beEhBHqlo3JXjWcQEciYe617yqyzuzusxRUKxyswxVgOrmQSYdyw==",
+      "path": "c1.win/8.0.20241.657",
+      "hashPath": "c1.win.8.0.20241.657.nupkg.sha512"
+    },
+    "C1.Win.C1FlexGrid/4.8.20241.657": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YKdm1mUzsbWtvubnZ9YLIOQkMIpd9uNeoNRIRRyDipBerwMDrA9eFTKh9D8P3jpHVN0vFoCECHNlC2K6DI8XHg==",
+      "path": "c1.win.c1flexgrid/4.8.20241.657",
+      "hashPath": "c1.win.c1flexgrid.4.8.20241.657.nupkg.sha512"
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
       "serviceable": true,
@@ -693,6 +756,20 @@
       "sha512": "sha512-po1jhvFd+8pbfvJR/puh+fkHi0GRanAdvayh/0e47yaM6CXWZ6opUjCMFuYlAnD2LcbyvQE7fPJKvogmaUcN+w==",
       "path": "microsoft.data.sqlclient.sni.runtime/5.2.0",
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
     },
     "Microsoft.Identity.Client/4.60.3": {
       "type": "package",

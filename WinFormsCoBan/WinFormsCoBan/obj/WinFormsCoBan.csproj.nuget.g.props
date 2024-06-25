@@ -5,15 +5,18 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\phang\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\phang\.nuget\packages\;D:\Ung dung\MESCIUS\ComponentOne\WinForms\bin\v8\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\phang\.nuget\packages\" />
+    <SourceRoot Include="D:\Ung dung\MESCIUS\ComponentOne\WinForms\bin\v8\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\phang\.nuget\packages\microsoft.web.webview2\1.0.864.35</PkgMicrosoft_Web_WebView2>
+    <PkgC1_Win Condition=" '$(PkgC1_Win)' == '' ">D:\Ung dung\MESCIUS\ComponentOne\WinForms\bin\v8\c1.win\8.0.20241.657</PkgC1_Win>
+    <PkgC1_Win_C1FlexGrid Condition=" '$(PkgC1_Win_C1FlexGrid)' == '' ">D:\Ung dung\MESCIUS\ComponentOne\WinForms\bin\v8\c1.win.c1flexgrid\4.8.20241.657</PkgC1_Win_C1FlexGrid>
   </PropertyGroup>
 </Project>

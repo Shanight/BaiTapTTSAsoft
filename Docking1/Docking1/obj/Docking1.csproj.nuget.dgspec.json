@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Asoft\\BaiTapTTSAsoft\\Docking1\\Docking1\\Docking1.csproj": {}
+  },
+  "projects": {
+    "D:\\Asoft\\BaiTapTTSAsoft\\Docking1\\Docking1\\Docking1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Asoft\\BaiTapTTSAsoft\\Docking1\\Docking1\\Docking1.csproj",
+        "projectName": "Docking1",
+        "projectPath": "D:\\Asoft\\BaiTapTTSAsoft\\Docking1\\Docking1\\Docking1.csproj",
+        "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
+        "outputPath": "D:\\Asoft\\BaiTapTTSAsoft\\Docking1\\Docking1\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\Ung dung\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "C1.Zip": {
+              "target": "Package",
+              "version": "[2.0.20233.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

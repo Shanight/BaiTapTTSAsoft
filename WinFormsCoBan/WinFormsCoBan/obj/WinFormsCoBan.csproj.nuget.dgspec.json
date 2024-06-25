@@ -14,10 +14,12 @@
         "outputPath": "D:\\Asoft\\BaiTapTTSAsoft\\WinFormsCoBan\\WinFormsCoBan\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "D:\\Ung dung\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,8 +27,8 @@
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.grapecity.com/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +52,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "C1.Win.C1FlexGrid": {
+              "target": "Package",
+              "version": "[4.8.20241.657, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.1, )"

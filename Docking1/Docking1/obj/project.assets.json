@@ -1,0 +1,174 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "C1.Zip/2.0.20233.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "C1.Zip/2.0.20233.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "C1.Zip/2.0.20233.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "C1.Zip/2.0.20233.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "C1.Zip/2.0.20233.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/C1.Zip.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "C1.Zip/2.0.20233.4": {
+      "sha512": "xIBrz+CEvN9L3LM+s12pwQ5j3OLSYOXqcqZb2zyCn6ViDqwsNpgg5v1y8u7HtMcw6lO/rfwRcTqOkAsFxgbl1w==",
+      "type": "package",
+      "path": "c1.zip/2.0.20233.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "c1.zip.2.0.20233.4.nupkg.sha512",
+        "c1.zip.nuspec",
+        "docs/readme.md",
+        "images/NuGetIcon.png",
+        "lib/netstandard2.0/C1.Zip.dll",
+        "lib/netstandard2.0/C1.Zip.xml",
+        "license.txt",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "C1.Zip >= 2.0.20233.4"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\phang\\.nuget\\packages\\": {},
+    "D:\\Ung dung\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Asoft\\BaiTapTTSAsoft\\Docking1\\Docking1\\Docking1.csproj",
+      "projectName": "Docking1",
+      "projectPath": "D:\\Asoft\\BaiTapTTSAsoft\\Docking1\\Docking1\\Docking1.csproj",
+      "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
+      "outputPath": "D:\\Asoft\\BaiTapTTSAsoft\\Docking1\\Docking1\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "D:\\Ung dung\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\Packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {}
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "C1.Zip": {
+            "target": "Package",
+            "version": "[2.0.20233.4, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
