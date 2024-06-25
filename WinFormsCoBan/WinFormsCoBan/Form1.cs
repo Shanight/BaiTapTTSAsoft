@@ -118,8 +118,8 @@ namespace WinFormsCoBan
 
                 string UserID = selectedRow.Cells["Mã nhân viên"].Value.ToString();
                 // Get the checkbox value
-                Form1 mainForm = new Form1();
-                Delete delete = new Delete(mainForm);
+                
+                Delete delete = new Delete(this);
                 delete.UserID = UserID;
                 // Pass the data to the UpdateUser form
                 delete.ShowDialog();

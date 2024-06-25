@@ -108,14 +108,14 @@ namespace WinFormsCoBan
                 }
                 else
                 {
-                    MessageBox.Show("Vui lòng nhập UserName");
+                    MessageBox.Show("Vui lòng nhập tên nhân viên");
                     username.Focus();
                 }
                 
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập ID User");
+                MessageBox.Show("Vui lòng nhập mã nhân viên");
                 iduser.Focus();
             }
             
