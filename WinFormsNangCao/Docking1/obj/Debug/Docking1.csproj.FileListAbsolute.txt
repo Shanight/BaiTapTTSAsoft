@@ -58,4 +58,4 @@ D:\Asoft\BaiTapTTSAsoft\Docking1\Docking1\bin\Debug\ja\C1.Win.C1SpellChecker.4.6
 D:\Asoft\BaiTapTTSAsoft\Docking1\Docking1\bin\Debug\ja\C1.Win.C1SpellChecker.4.8.resources.dll
 D:\Asoft\BaiTapTTSAsoft\Docking1\Docking1\bin\Debug\ja\C1.Win.C1SuperTooltip.4.8.resources.dll
 D:\Asoft\BaiTapTTSAsoft\Docking1\Docking1\bin\Debug\ja\C1.Win.TreeView.4.8.resources.dll
-D:\Asoft\BaiTapTTSAsoft\Docking1\Docking1\obj\Debug\Docking1.create.resources
+D:\Asoft\BaiTapTTSAsoft\Docking1\Docking1\obj\Debug\Docking1.Form2.resources
