@@ -14,11 +14,13 @@
         "outputPath": "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\TelerikAspNetCoreApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "D:\\Ung dung\\MESCIUS\\ComponentOne\\WinForms\\bin\\v8\\",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "D:\\Asoft\\BaiTapTTSAsoft\\webnangcao\\NuGet.Config",
           "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +28,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\MESCIUS\\ComponentOne\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\phang\\AppData\\Roaming\\Telerik\\Updates\\telerik.ui.for.aspnet.core.hotfix.2024.2.514.trial\\": {},
           "C:\\Users\\phang\\AppData\\Roaming\\Telerik\\Updates\\telerik.ui.for.aspnet.core.hotfix.2024.2.514.trial\\wrappers\\aspnetcore\\Binaries\\AspNet.Core": {},
